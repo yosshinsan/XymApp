@@ -1,0 +1,93 @@
+/* indexページ固有のCSS
+Object/Project
+*/
+
+/* Object
+*OCSS (Object Oriented CSS =オブジェクト指向CSS) のコンセプトを元に、
+*プロジェクトにおける繰り返されるビジュアルパターンをすべてObject定義します。
+*ObjectはComponent,Project,Utilityの3種類に分類します。
+
+* ========================== */
+
+
+
+/* Project
+*プロジェクト固有のパターンが定義されるレイヤーです。
+*たとえば、記事一覧や、ユーザープロフィール、画像ギャラリーなどコンテンツを構成する要素などが該当します。 
+*Project のモジュールは、定義されたBlock Element で完結することも多いのですが、
+*一部の要素をComponent担うこともあります。
+
+*スタイル、モジュール例
+*articles, ranking, promo...
+* ========================== */
+
+.p-gridItemHeader{
+   font-size: 16px;
+   line-height: 30px;
+   text-decoration: underline;
+}
+
+.p-gridItemData{
+   color: white;
+   font-size: 16px;
+   line-height: 30px;
+}
+
+.p-wireGridItemPartNum{
+   grid-column: 1 / 4
+}
+
+.p-wireGridItemCuttingLength{
+   grid-column: 9 / 11
+}
+
+.p-terminalGridItemPartNum{
+   grid-column: 5 / 7
+}
+
+.p-terminalGridItemDummy{
+   grid-column: 2 / 7
+}
+
+.p-terminalGridItemCuttingLength{
+   grid-column: 5 / 7
+}
+
+.p-otherGridItemJointData{
+   grid-column: 1 / 3
+}
+
+.p-otherGridItemHeadSide{
+   grid-column: 6 / 8
+}
+
+.p-otherGridItemDummy{
+   grid-column: 8 / 14
+}
+
+.p-wireGrid{
+   width: 1200px;
+   margin: 0 auto 50px auto;
+   grid-template-columns: calc(1200px/11) calc(1200px/11) calc(1200px/11) calc(1200px/11) calc(1200px/11) calc(1200px/11) calc(1200px/11) calc(1200px/11) calc(1200px/11) calc(1200px/11) calc(1200px/11);
+   grid-template-rows: 30px 30px 30px 30px;
+}
+
+.p-terimnalPart{
+   width: 1200px;
+   margin: 0 auto 50px auto;;
+}
+
+.p-terminalGrid{
+   width: 570px;
+   grid-template-columns: 95px 95px 95px 95px 95px 95px;
+   grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+}
+
+.p-otherGrid{
+   width: 1200px;
+   margin: 0 auto;
+   grid-template-columns: calc(1200px/13) calc(1200px/13) calc(1200px/13) calc(1200px/13) calc(1200px/13) calc(1200px/13) calc(1200px/13) calc(1200px/13) calc(1200px/13) calc(1200px/13) calc(1200px/13) calc(1200px/13) calc(1200px/13);
+   grid-template-rows: 30px 30px 30px 30px;
+}
+
+

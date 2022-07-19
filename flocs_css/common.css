@@ -1,0 +1,124 @@
+/* 全ページ共有のCSS
+Foundation,Layout,Object/Component
+*/
+
+/**
+* Foundation
+*Reset.css Normalize.css などを用いたブラウザのデフォルトスタイルの初*期化や、
+*プロジェクトにおける基本的なスタイルを定義します。
+*ページの下地*としての全体の背景や、基本的なタイポグラフィなどが該当します。
+*Sass など*のツールを使っている場合には、変数、 Mixin Function のコードも
+*Foundtion に定義してもよいでしょう。
+
+*スタイル、モジュール例
+*reset, normalize, base...
+* ========================== */
+
+/* Reset */
+/* destyle.cssにてリセット */
+
+/* Base */
+body {
+   background-color: black;
+   color: aqua;
+   font-size: 24px;
+} 
+
+
+
+/**
+* Layout
+*ページを構成するヘッダーやメインのコンテンツエリア、
+*サイドバーやフッ*ターといったプロジェクト共通のコンテナーブロックのスタイルを定義します。
+
+*スタイル、モジュール例
+*header, main, sidebar, footer ...
+* ========================== */
+
+/* Header */
+.l-header {
+   height: 50px;
+   width: 1240px;
+   margin: 0 auto;
+   padding: 10px;
+   /* display: flex; */
+   /* justify-content: space-between; */
+   background-color: black;
+}
+
+/* Main */
+.l-main {
+   height: calc(100vh - 100px);
+   width: 1240px;
+   margin: 0 auto;
+   padding-top: 50px; /* これはあんまりよくない */
+   background-color: black;
+}
+
+/* Footer */
+.l-footer {
+   height: 50px;
+   width: 1240px;
+   margin: 0 auto;
+   padding: 10px;
+   background-color: black;
+   border-top: 1px solid gray;
+}
+
+
+
+/* Object
+*OCSS (Object Oriented CSS =オブジェクト指向CSS) のコンセプトを元に、
+*プロジェクトにおける繰り返されるビジュアルパターンをすべてObject定義します。
+*ObjectはComponent,Project,Utilityの3種類に分類します。
+
+* ========================== */
+
+
+
+/* Component
+*パターンとして再利用できる汎用的なモジュールが定義されるレイヤーです。
+*Webサイトを構築するにあたってほぼ必ず使われるような汎用的な要素をイメージしてください。
+*たとえば、 HTML のプリミテイブな要素であるフォームのテキストフィールド( など)や、
+*ボタンなどが該当します。
+*
+*スタイル、モジュール例
+*button, form, avatar ...
+* ========================== */
+
+/* Flexbox */
+.c-flexbox{
+   display: flex;
+}
+
+.c-flexbox--spacebetween{
+   justify-content: space-between;
+}
+
+.c-flexbox--spacearound{
+   justify-content: space-around;
+}
+
+/* Grid */
+.c-grid{
+   display: grid;
+}
+
+.c-flexbox--spacebetween{
+   justify-content: space-between;
+}
+
+
+/* Button */
+.c-button {
+
+}
+.c-button--primary {
+
+}
+
+
+/* InputBox */
+.c-inputBox{
+   color: chartreuse;
+}

@@ -1,0 +1,33 @@
+/* indexページ固有のCSS
+Object/Project
+*/
+
+/* Object
+*OCSS (Object Oriented CSS =オブジェクト指向CSS) のコンセプトを元に、
+*プロジェクトにおける繰り返されるビジュアルパターンをすべてObject定義します。
+*ObjectはComponent,Project,Utilityの3種類に分類します。
+
+* ========================== */
+
+
+
+/* Project
+*プロジェクト固有のパターンが定義されるレイヤーです。
+*たとえば、記事一覧や、ユーザープロフィール、画像ギャラリーなどコンテンツを構成する要素などが該当します。 
+*Project のモジュールは、定義されたBlock Element で完結することも多いのですが、
+*一部の要素をComponent担うこともあります。
+
+*スタイル、モジュール例
+*articles, ranking, promo...
+* ========================== */
+
+/* MainMenuList */
+.p-mainmenulist{
+   width: 600px;
+   margin: 0 auto;
+   list-style-type: number;
+}
+
+.p-mainmenulist__item{
+   margin-bottom: 30px;
+}
